@@ -1,0 +1,156 @@
+﻿2026-09-21T13:57:06.1862999Z Current runner version: '2.337.0'
+2026-09-21T13:57:06.1880589Z ##[group]Runner Image Provisioner
+2026-09-21T13:57:06.1881190Z Hosted Compute Agent
+2026-09-21T13:57:06.1881585Z Version: 20260828.587
+2026-09-21T13:57:06.1881948Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-21T13:57:06.1882382Z Build Date: 2026-08-28T16:44:25Z
+2026-09-21T13:57:06.1882821Z Worker ID: {fdaee050-ed33-466f-acce-4ab86f9fcb27}
+2026-09-21T13:57:06.1883232Z Azure Region: centralus
+2026-09-21T13:57:06.1883630Z ##[endgroup]
+2026-09-21T13:57:06.1884496Z ##[group]Operating System
+2026-09-21T13:57:06.1885004Z Ubuntu
+2026-09-21T13:57:06.1885361Z 24.04.5
+2026-09-21T13:57:06.1885659Z LTS
+2026-09-21T13:57:06.1885980Z ##[endgroup]
+2026-09-21T13:57:06.1886338Z ##[group]Runner Image
+2026-09-21T13:57:06.1886689Z Image: ubuntu-24.04
+2026-09-21T13:57:06.1887046Z Version: 20260907.300.1
+2026-09-21T13:57:06.1887774Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-21T13:57:06.1888668Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+2026-09-21T13:57:06.1889200Z ##[endgroup]
+2026-09-21T13:57:06.1890109Z ##[group]GITHUB_TOKEN Permissions
+2026-09-21T13:57:06.1891399Z Contents: write
+2026-09-21T13:57:06.1891859Z Metadata: read
+2026-09-21T13:57:06.1892180Z ##[endgroup]
+2026-09-21T13:57:06.1893462Z Secret source: Actions
+2026-09-21T13:57:06.1893981Z Cache mode: write
+2026-09-21T13:57:06.1894404Z Prepare workflow directory
+2026-09-21T13:57:06.2457873Z Prepare all required actions
+2026-09-21T13:57:06.2498461Z Getting action download info
+2026-09-21T13:57:06.5115124Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-21T13:57:06.5876005Z Download action repository 'pnpm/action-setup@v4' (SHA:b906affcce14559ad1aafd4ab0e942779e9f58b1)
+2026-09-21T13:57:07.4277514Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-09-21T13:57:07.7073001Z Download action repository 'actions/setup-java@v4' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-09-21T13:57:08.6090023Z Download action repository 'android-actions/setup-android@v3' (SHA:9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407)
+2026-09-21T13:57:08.9446120Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-09-21T13:57:09.6317904Z Download action repository 'softprops/action-gh-release@v2' (SHA:3bb12739c298aeb8a4eeaf626c5b8d85266b0e65)
+2026-09-21T13:57:10.2553115Z Complete job name: build
+2026-09-21T13:57:10.3778191Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-21T13:57:10.3783274Z ##[group]Run actions/checkout@v4
+2026-09-21T13:57:10.3783490Z with:
+2026-09-21T13:57:10.3783639Z   repository: cymylive/zyfun-android
+2026-09-21T13:57:10.3785580Z   token: ***
+2026-09-21T13:57:10.3785705Z   ssh-strict: true
+2026-09-21T13:57:10.3785823Z   ssh-user: git
+2026-09-21T13:57:10.3785947Z   persist-credentials: true
+2026-09-21T13:57:10.3786088Z   clean: true
+2026-09-21T13:57:10.3786227Z   sparse-checkout-cone-mode: true
+2026-09-21T13:57:10.3786370Z   fetch-depth: 1
+2026-09-21T13:57:10.3786491Z   fetch-tags: false
+2026-09-21T13:57:10.3786611Z   show-progress: true
+2026-09-21T13:57:10.3786736Z   lfs: false
+2026-09-21T13:57:10.3786888Z   submodules: false
+2026-09-21T13:57:10.3787009Z   set-safe-directory: true
+2026-09-21T13:57:10.3787154Z   allow-unsafe-pr-checkout: false
+2026-09-21T13:57:10.3787386Z ##[endgroup]
+2026-09-21T13:57:10.4502580Z Syncing repository: cymylive/zyfun-android
+2026-09-21T13:57:10.4503494Z ##[group]Getting Git version info
+2026-09-21T13:57:10.4503717Z Working directory is '/home/runner/work/zyfun-android/zyfun-android'
+2026-09-21T13:57:10.4504035Z [command]/usr/bin/git version
+2026-09-21T13:57:10.4547272Z git version 2.55.0
+2026-09-21T13:57:10.4561916Z ##[endgroup]
+2026-09-21T13:57:10.4572539Z Temporarily overriding HOME='/home/runner/work/_temp/53ef40e6-5b16-4b25-91cf-40dda4713d10' before making global git config changes
+2026-09-21T13:57:10.4573326Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-21T13:57:10.4576511Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zyfun-android/zyfun-android
+2026-09-21T13:57:10.4678176Z Deleting the contents of '/home/runner/work/zyfun-android/zyfun-android'
+2026-09-21T13:57:10.4678946Z ##[group]Initializing the repository
+2026-09-21T13:57:10.4679903Z [command]/usr/bin/git init /home/runner/work/zyfun-android/zyfun-android
+2026-09-21T13:57:10.4806592Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-21T13:57:10.4806938Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-21T13:57:10.4807253Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-21T13:57:10.4807466Z hint: call:
+2026-09-21T13:57:10.4807583Z hint:
+2026-09-21T13:57:10.4807808Z hint: 	git config --global init.defaultBranch <name>
+2026-09-21T13:57:10.4807993Z hint:
+2026-09-21T13:57:10.4808164Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-21T13:57:10.4808443Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-21T13:57:10.4808655Z hint:
+2026-09-21T13:57:10.4808780Z hint: 	git branch -m <name>
+2026-09-21T13:57:10.4808911Z hint:
+2026-09-21T13:57:10.4809087Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-21T13:57:10.5176943Z Initialized empty Git repository in /home/runner/work/zyfun-android/zyfun-android/.git/
+2026-09-21T13:57:10.5182627Z [command]/usr/bin/git remote add origin https://github.com/cymylive/zyfun-android
+2026-09-21T13:57:10.5370370Z ##[endgroup]
+2026-09-21T13:57:10.5370905Z ##[group]Disabling automatic garbage collection
+2026-09-21T13:57:10.5373959Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-21T13:57:10.6010882Z ##[endgroup]
+2026-09-21T13:57:10.6025528Z ##[group]Setting up auth
+2026-09-21T13:57:10.6031828Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-21T13:57:10.6048528Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-21T13:57:10.6869589Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-21T13:57:10.6935846Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-21T13:57:10.7217334Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-21T13:57:10.7245171Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-21T13:57:10.7413451Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-21T13:57:10.7891670Z ##[endgroup]
+2026-09-21T13:57:10.7892083Z ##[group]Fetching the repository
+2026-09-21T13:57:10.7892780Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +32257bea77fec92134cde6c3062fb7cb71f8a151:refs/remotes/origin/main
+2026-09-21T13:57:11.8349840Z From https://github.com/cymylive/zyfun-android
+2026-09-21T13:57:11.8350246Z  * [new ref]         32257bea77fec92134cde6c3062fb7cb71f8a151 -> origin/main
+2026-09-21T13:57:11.8354500Z ##[endgroup]
+2026-09-21T13:57:11.8355027Z ##[group]Determining the checkout info
+2026-09-21T13:57:11.8357220Z ##[endgroup]
+2026-09-21T13:57:11.8363041Z [command]/usr/bin/git sparse-checkout disable
+2026-09-21T13:57:11.8412373Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-21T13:57:11.8445027Z ##[group]Checking out the ref
+2026-09-21T13:57:11.8445319Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-09-21T13:57:11.9201601Z Switched to a new branch 'main'
+2026-09-21T13:57:11.9204763Z branch 'main' set up to track 'origin/main'.
+2026-09-21T13:57:11.9212577Z ##[endgroup]
+2026-09-21T13:57:11.9251662Z [command]/usr/bin/git log -1 --format=%H
+2026-09-21T13:57:11.9274889Z 32257bea77fec92134cde6c3062fb7cb71f8a151
+2026-09-21T13:57:11.9813841Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-21T13:57:11.9815341Z ##[group]Run pnpm/action-setup@v4
+2026-09-21T13:57:11.9815480Z with:
+2026-09-21T13:57:11.9815605Z   version: 11.8.0
+2026-09-21T13:57:11.9815717Z   run_install: false
+2026-09-21T13:57:11.9815849Z   dest: ~/setup-pnpm
+2026-09-21T13:57:11.9815961Z   cache: false
+2026-09-21T13:57:11.9816078Z   cache_dependency_path: pnpm-lock.yaml
+2026-09-21T13:57:11.9816231Z   package_json_file: package.json
+2026-09-21T13:57:11.9816363Z   standalone: false
+2026-09-21T13:57:11.9816474Z ##[endgroup]
+2026-09-21T13:57:12.0654811Z ##[group]Running self-installer...
+2026-09-21T13:57:12.0689834Z Error: Multiple versions of pnpm specified:
+2026-09-21T13:57:12.0690534Z   - version 11.8.0 in the GitHub Action config with the key "version"
+2026-09-21T13:57:12.0712191Z ##[error]Error: Multiple versions of pnpm specified:
+  - version 11.8.0 in the GitHub Action config with the key "version"
+  - version pnpm@11.8.0+sha512.c1f5e7c4cb241c8f174b743851d82f42b802324afc8b0f116b96adb15aa06664948dde36960a3ba1079ba5b4b29dd0140135b94b5b5f5263592249d68e555f26 in the package.json with the key "packageManager"
+Remove one of these versions to avoid version mismatch errors like ERR_PNPM_BAD_PM_VERSION
+2026-09-21T13:57:12.0720182Z   - version pnpm@11.8.0+sha512.c1f5e7c4cb241c8f174b743851d82f42b802324afc8b0f116b96adb15aa06664948dde36960a3ba1079ba5b4b29dd0140135b94b5b5f5263592249d68e555f26 in the package.json with the key "packageManager"
+2026-09-21T13:57:12.0721240Z Remove one of these versions to avoid version mismatch errors like ERR_PNPM_BAD_PM_VERSION
+2026-09-21T13:57:12.0721763Z     at readTarget (/home/runner/work/_actions/pnpm/action-setup/v4/dist/index.js:1:7537)
+2026-09-21T13:57:12.0722298Z     at runSelfInstaller (/home/runner/work/_actions/pnpm/action-setup/v4/dist/index.js:1:6702)
+2026-09-21T13:57:12.0722824Z     at async install (/home/runner/work/_actions/pnpm/action-setup/v4/dist/index.js:1:5706)
+2026-09-21T13:57:12.0723322Z     at async runMain (/home/runner/work/_actions/pnpm/action-setup/v4/dist/index.js:1:2804)
+2026-09-21T13:57:12.0723806Z     at async main (/home/runner/work/_actions/pnpm/action-setup/v4/dist/index.js:1:2726)
+2026-09-21T13:57:12.2103527Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-21T13:57:12.2104184Z Post job cleanup.
+2026-09-21T13:57:12.2956373Z Pruning is unnecessary.
+2026-09-21T13:57:12.3858761Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-21T13:57:12.3859442Z Post job cleanup.
+2026-09-21T13:57:12.4386583Z [command]/usr/bin/git version
+2026-09-21T13:57:12.4417593Z git version 2.55.0
+2026-09-21T13:57:12.4442318Z Temporarily overriding HOME='/home/runner/work/_temp/35a17f24-8d03-4acd-926e-245630b65b6f' before making global git config changes
+2026-09-21T13:57:12.4443367Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-21T13:57:12.4444755Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zyfun-android/zyfun-android
+2026-09-21T13:57:12.4477342Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-21T13:57:12.4507320Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-21T13:57:12.4700266Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-21T13:57:12.4724808Z http.https://github.com/.extraheader
+2026-09-21T13:57:12.4732190Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-21T13:57:12.4757961Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-21T13:57:12.4952367Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-21T13:57:12.4983298Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-21T13:57:12.5259126Z Cleaning up orphan processes
+2026-09-21T13:57:12.5436803Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, pnpm/action-setup@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

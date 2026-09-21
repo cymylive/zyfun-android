@@ -51,6 +51,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --ignore-scripts --no-frozen-lockfile
 
+      - name: Build @zy/crypto workspace package
+        run: pnpm --filter @zy/crypto build
+
       - name: Build mobile web assets
         run: pnpm exec vite build --config vite.config.mobile.ts
 
